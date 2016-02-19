@@ -6,11 +6,11 @@
             box-sizing: border-box;
 }
 
-/*FONTS*/
+/*FONTS: ARVO AND OPEN SANS*/
 
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic);
 
-
+/*MAIN ELEMENTS*/
 
 body {
   font-family: 'Open Sans';
@@ -25,6 +25,16 @@ body {
   margin-bottom: 0;
   overflow: hidden;
 }
+
+.backgroundimg {
+  height: 300px;
+  background-image: url("../img/wva.jpg");
+  background-size: cover;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/*STYLING FOR MOBILE ONLY DIV CONTENT*/
 
 .mobileOnly {
   text-align: center;
@@ -53,37 +63,7 @@ body {
   width: 40%;
 }
 
-
-.backgroundimg {
-  height: 300px;
-  background-image: url("../img/wva.jpg");
-  background-size: cover;
-  width: 100%;
-  border-radius: 4px;
-}
-
-.col1 {
-  display: none;
-}
-
-.col2 {
-  margin-top: 10px;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.col2 h3 {
-  font-weight: lighter;
-  font-style: italic;
-}
-
-.col2 p {
-  font-weight: lighter;
-  font-size: 16px;
-  line-height: 1.5em;
-  padding: 15px;
-  line-height: 1.7em;
-}
+/*NAVBAR STYLING*/
 
 .navbar a {
   text-decoration: none;
@@ -109,11 +89,38 @@ body {
   color: #3d3d5c;
 }
 
+/*COLUMNS STYLING*/
+
+.col1 {
+  display: none;
+}
+
+.col2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.col2 h3 {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.col2 p {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 15px;
+  line-height: 1.7em;
+}
+
 
 /*MEDIA QUERIES*/
 
 
 @media only screen and (min-width: 650px) {
+
+/*MAIN ELEMENTS STYLING*/
 
   body {
     background-color: white;
@@ -129,80 +136,20 @@ body {
     display: none;
   }
 
-  .navbar a {
-    color: black;
-    text-transform: capitalize;;
-    letter-spacing: .01em;
-    font-size: 16px;
-    text-align: left;
-    padding-bottom: 5px;
-    border: none;
-  }
-
-  .navbar a:hover {
-    color: #3d3d5c;
-    background-color: #e6e6e6;
-  }
-
-  .col1 {
-    display: block;
-    float: left;
-    width: 44%;
-    height: 300px;
-    margin-top: 10px;
-    text-align: center;
-    background-color: #262626;
-    border-radius: 4px;
-  }
-
-  .col1 h2 {
-    margin: 0;
-    font-family: 'Arvo';
-    font-weight: lighter;
-    font-size: 3.25em;
-    text-align: center;
-}
-
-  .col1 hr {
-    width: 50%;
-  }
-
-  .col1 p {
-    text-transform: uppercase;
-    color: white;
-    padding-top: 25px;
-    font-size: 16px;
-  }
-
-  .col2 {
-    margin-top: 10px;
-    float: right;
-    width: 55%;
-    text-align: center;
-    background-color: #262626;
-    height: 300px;
-    border-radius: 4px;
-  }
-
-
-  .col2 h3 {
-    padding-top: 5px;
-    font-size: 1.5em;
-    font-weight: lighter;
-    font-style: italic;
-  }
-
-  .col2 p {
-    margin-top: 0;
-    padding-top: 0;
-    background-color: #262626;
-    font-size: 16px;
-  }
-
   .container2 {
     overflow: hidden;
     height: auto;
   }
+
+  .backgroundimg {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    position: relative;
+    border: none;
+  }
+
+/*NAVBAR STYLING*/
 
   header {
     width: 225px;
@@ -236,16 +183,83 @@ body {
     display: block;
   }
 
-  .backgroundimg {
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    position: relative;
+  .navbar a {
+    color: black;
+    text-transform: capitalize;;
+    letter-spacing: .01em;
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 5px;
     border: none;
+  }
+
+  .navbar a:hover {
+    color: #3d3d5c;
+    background-color: #e6e6e6;
+  }
+
+  /*STYLING FOR COL1 DIV*/
+
+  .col1 {
+    display: block;
+    float: left;
+    width: 44%;
+    height: 300px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #262626;
+    border-radius: 4px;
+  }
+
+  .col1 h2 {
+    margin: 0;
+    font-family: 'Arvo';
+    font-weight: lighter;
+    font-size: 3.25em;
+    text-align: center;
+}
+
+  .col1 hr {
+    width: 50%;
+  }
+
+  .col1 p {
+    text-transform: uppercase;
+    color: white;
+    padding-top: 25px;
+    font-size: 16px;
+  }
+
+  /*STYLING FOR COL2 DIV*/
+
+  .col2 {
+    margin-top: 10px;
+    float: right;
+    width: 55%;
+    text-align: center;
+    background-color: #262626;
+    height: 300px;
+    border-radius: 4px;
+  }
+
+  .col2 h3 {
+    padding-top: 5px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  .col2 p {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #262626;
+    font-size: 16px;
   }
 }
 
 @media only screen and (min-width: 920px) {
+
+  /*MAIN ELEMENTS STYLING*/
 
   .container {
     width: 100%;
@@ -265,18 +279,7 @@ body {
     float: right;
   }
 
-  .col2 {
-    float: right;
-    width: 100%;
-    height: 49%;
-    background-color: #262626;
-    margin-top: 4%;
-  }
-
-  .col2 p {
-    font-size: .9em;
-    line-height: 1.9em;
-  }
+  /*COL1 DIV STYLING*/
 
   .col1 {
     padding-top: 70px;
@@ -297,6 +300,20 @@ body {
 
   .col1 hr {
     width: 40%;
+  }
 
+/*COL2 DIV STYLING*/
+
+  .col2 {
+    float: right;
+    width: 100%;
+    height: 49%;
+    background-color: #262626;
+    margin-top: 4%;
+  }
+
+  .col2 p {
+    font-size: .9em;
+    line-height: 1.9em;
   }
 }
