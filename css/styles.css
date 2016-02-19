@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/*FONTS*/
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic);
+
+
+
+body {
+  font-family: 'Open Sans';
+  background-color: #262626;
+  color: white;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.mobileOnly {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mobileOnly p {
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+}
+
+.mobileOnly h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arvo';
+  font-size: 2.8em;
+  font-weight: lighter;
+}
+
+.mobileOnly hr {
+  width: 40%;
+}
+
+
+.backgroundimg {
+  height: 300px;
+  background-image: url("../img/wva.jpg");
+  background-size: cover;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.col1 {
+  display: none;
+}
+
+.col2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.col2 h3 {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.col2 p {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 15px;
+  line-height: 1.7em;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  font-size: 24px;
+  text-align: center;
+  padding: 7px;
+  margin: 7px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.navbar {
+  margin-bottom: 35px;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: #3d3d5c;
+}
