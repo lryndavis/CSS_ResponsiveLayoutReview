@@ -1,4 +1,5 @@
-# Epicodus CSS Week 2 Code Review-Responsive Layout
+#Responsive Layout
+##Epicodus CSS, Week 2 Code Review
 #### By Lauryn Davis
 
 ###Description
