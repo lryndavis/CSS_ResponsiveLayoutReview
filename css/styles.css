@@ -108,3 +108,139 @@ body {
   background-color: white;
   color: #3d3d5c;
 }
+
+
+/*MEDIA QUERIES*/
+
+
+@media only screen and (min-width: 650px) {
+
+  body {
+    background-color: white;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px dotted white;
+  }
+
+  .mobileOnly {
+    display: none;
+  }
+
+  .navbar a {
+    color: black;
+    text-transform: capitalize;;
+    letter-spacing: .01em;
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 5px;
+    border: none;
+  }
+
+  .navbar a:hover {
+    color: #3d3d5c;
+    background-color: #e6e6e6;
+  }
+
+  .col1 {
+    display: block;
+    float: left;
+    width: 44%;
+    height: 300px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #262626;
+    border-radius: 4px;
+  }
+
+  .col1 h2 {
+    margin: 0;
+    font-family: 'Arvo';
+    font-weight: lighter;
+    font-size: 3.25em;
+    text-align: center;
+}
+
+  .col1 hr {
+    width: 50%;
+  }
+
+  .col1 p {
+    text-transform: uppercase;
+    color: white;
+    padding-top: 25px;
+    font-size: 16px;
+  }
+
+  .col2 {
+    margin-top: 10px;
+    float: right;
+    width: 55%;
+    text-align: center;
+    background-color: #262626;
+    height: 300px;
+    border-radius: 4px;
+  }
+
+
+  .col2 h3 {
+    padding-top: 5px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  .col2 p {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #262626;
+    font-size: 16px;
+  }
+
+  .container2 {
+    overflow: hidden;
+    height: auto;
+  }
+
+  header {
+    width: 225px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    opacity: .05%;
+    line-height: 1.15em;
+    background-color: #e6e6e6;
+    padding-bottom: 15px;
+    position: absolute;
+    z-index: 10;
+    opacity: .5;
+    color: black;
+  }
+
+  header h2 {
+    padding-left: 15px;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+
+  header a {
+    font-size: 18px;
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+    display: block;
+  }
+
+  .backgroundimg {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    position: relative;
+    border: none;
+  }
+}
